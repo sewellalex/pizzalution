@@ -1,5 +1,17 @@
+@font-face {
+  font-family: "Genome";
+  src: url("Genome-Thin.otf");
+}
+
 body {
-  font-family: Helvetica;
+  background-color: #221E20;
+  font-family: Genome;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.home {
+  height: 768px;
 }
 
 .opacity {
@@ -31,16 +43,16 @@ img {
 .name {
   text-align: center;
   color: white;
-  font-size: 140px;;
+  font-size: 5em;
   z-index: 1;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   line-height: 98%;
 }
 
 .slogan {
   text-align: center;
   color: white;
-  font-size: 48px;
+  font-size: 2em;
   z-index: 1;
   line-height: 110%;
 }
@@ -48,9 +60,46 @@ img {
 .button {
   text-align: center;
   color: white;;
-  z-index: 1;
+  z-index: 2;
 }
 
 .btn {
-  font-size: 48px;
+  font-size: 2em;
+}
+
+.size {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 16px
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px
+  }
+
+  .home {
+    height: 400px;
+  }
+
+  .opacity {
+    height: 400px;
+  }
+
+  img {
+    height: 400px;
+  }
+
+  .space {
+    height: 100px;
+  }
 }
