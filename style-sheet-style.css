@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Genome";
+  src: url("Genome-Thin.otf");
+}
+
+body {
+  font-family: Genome;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.main {
+  background-color: #221E20;
+}
+
+.accent {
+  background-color: #D03B3B;
+}
+
+.font {
+  background-color: white;
+  border: 1px solid black;
+}
