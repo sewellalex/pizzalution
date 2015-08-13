@@ -23,7 +23,7 @@ body {
   z-index: 0;
   object-fit: cover;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 img {
@@ -58,7 +58,7 @@ img {
 
 .button {
   text-align: center;
-  color: white;;
+  color: white;
   z-index: 2;
 }
 
