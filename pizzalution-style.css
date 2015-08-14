@@ -6,7 +6,7 @@
 body {
   background-color: #221E20;
   font-family: Genome;
-  font-weight: lighter;
+  /*font-weight: bold;*/
   font-size: 24px;
 }
 
@@ -79,6 +79,15 @@ label {
   color: white;
 }
 
+.extra {
+  height: 60px;
+}
+
+.submit {
+  font-size: 0.7em;
+  color: black;
+}
+
 
 @media (max-width: 992px) {
   body {
@@ -105,5 +114,9 @@ label {
 
   .space {
     height: 100px;
+  }
+
+  .extra {
+    height: 30px;
   }
 }
