@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Pizzalution</title>
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="default.css" rel="stylesheet">
+</head>
+<body>
+  <div class="home container-fluid">
+    <div class="row">
+      <div class="opacity"></div>
+      <img src="images/pizza-stock.jpg">
+    </div>
+    <div class="row">
+      <div class="space col-md-12"></div>
+    </div>
+    <div class="row">
+      <div class="name col-md-12">PIZZALUTION</div>
+      <div class="slogan col-md-12"><p>Your solution to the perfect pizza</p></div>
+      <div class="button col-md-12"><button type="button" class="btn btn-danger" id="begin">Build Your Pizza</button></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="build">
+      <div class="row">
+        <!-- Get price modal -->
+        <div class="modal fade" id="get-price" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Ordering Information</h4>
+              </div>
+              <div class="modal-body">
+                <!-- Form -->
+                <form class="submit form-horizontal">
+                  <div class="form-group">
+                    <label for="input-name" class="submit col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="input-name" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="input-email" class="submit col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="input-email" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="input-zip" class="submit col-sm-2 control-label">Zip Code</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="input-zip" placeholder="Zip Code">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="price btn btn-danger" data-dismiss="modal">Get Prices</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="building col-md-12">Build Your Pizza</div>
+        <!-- Carousel -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+            <!-- progress bar -->
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                  5%
+                </div>
+              </div>
+              <div class="size col-md-12">Choose Your Size</div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="radio" name="size" id="small" autocomplete="off"> Small
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="size" id="medium" autocomplete="off"> Medium
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="size" id="large" autocomplete="off"> Large
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="size" id="x-large" autocomplete="off"> X-Large
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <!-- progress bar -->
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                  25%
+                </div>
+              </div>
+              <div class="size col-md-12">Choose Your Sauce</div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="radio" name="sauce" id="marinara" autocomplete="off"> Marinara
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="sauce" id="bbq" autocomplete="off"> BBQ
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="sauce" id="ranch" autocomplete="off"> Ranch
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="sauce" id="none" autocomplete="off"> None
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <!-- progress bar -->
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                  50%
+                </div>
+              </div>
+              <div class="size col-md-12">Choose Your Meats</div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Pepperoni
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Ham
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Bacon
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Sausage
+                </label>
+              </div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Spicy Sausage
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Anchovies
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Chicken
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <!-- progress bar -->
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                  75%
+                </div>
+              </div>
+              <div class="size col-md-12">Choose Your Veggies</div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Mushrooms
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Peppers
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Pineapple
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Black Olives
+                </label>
+              </div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Tomatoes
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Jalapenos
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Onion
+                </label>
+              </div>
+            </div>
+            <div class="item">
+              <!-- progress bar -->
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
+                  100%
+                </div>
+              </div>
+              <div class="size col-md-12">Options</div>
+              <!--<div class="extra col-md-12"></div>-->
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="radio" name="option" id="duplicate" autocomplete="off" checked>Duplicate Pizza
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="option" id="new" autocomplete="off">Create New Pizza
+                </label>
+                <label class="btn btn-danger" data-toggle="modal" data-target="#get-price">
+                  <input type="radio" name="option" id="price" autocomplete="off"> Get Price
+                </label>
+              </div>
+            </div>
+          </div>
+           <!--Controls-->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buy container-fluid">
+    <div class="row">
+      <div class="size col-md-12">Choose Your Price</div>
+      <div class="size col-md-12">
+        <table class="table">
+          <tr>
+            <th>Company</th>
+            <th>Price</th>
+            <th>Order</th>
+          </tr>
+          <tr>
+            <td>Domino's</td>
+            <td>$9.47</td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+          </tr>
+          <tr>
+            <td>Pizza Hut</td>
+            <td>$8.92</td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+          </tr>
+          <tr>
+            <td>Papa John's</td>
+            <td>$8.21</td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+          </tr>
+          <tr>
+            <td>Little Caesars</td>
+            <td>$7.84</td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- Complete Order Modal -->
+    <div class="modal fade" id="purchase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel-two">Complete Purchase</h4>
+          </div>
+          <div class="modal-body">
+            <!-- Form -->
+            <form class="submit form-horizontal">
+              <div class="form-group">
+                <label for="input-name" class="submit col-sm-2 control-label">Card Number</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="input-card" placeholder="Card Number">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="input-email" class="submit col-sm-2 control-label">Experation Date</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="input-experation" placeholder="Experation Date on Card">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="input-zip" class="submit col-sm-2 control-label">Security Code</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="input-security" placeholder="Security Code">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="price btn btn-danger" data-dismiss="modal">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="pizzalution.js"></script>
+</body>
+</html>
