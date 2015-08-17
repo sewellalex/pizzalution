@@ -23,7 +23,7 @@ body {
   z-index: 0;
   object-fit: cover;
   background-color: black;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 img {
@@ -62,6 +62,19 @@ img {
   z-index: 2;
 }
 
+.build {
+  height: 350px;
+}
+
+.carousel {
+  width: 100%;
+  height: 270px;
+}
+
+.progress {
+  margin-bottom: 0;
+}
+
 .btn {
   font-size: 2em;
 }
@@ -71,23 +84,39 @@ img {
   color: white;
   font-size: 2em;
   z-index: 1;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  /*margin-top: 40px;*/
+  margin-bottom: 15px;
 }
 
 label {
   color: white;
 }
 
-.extra {
-  height: 60px;
+
+.modal-dialog {
+  /*position: fixed;*/
+  top: -30px;
+  z-index: 2;
+}
+
+.modal-header {
+  background-color: #D03B3B;
+  color: white;
+}
+
+.modal-content {
+  background-color: #221E20;
+  color: white;
 }
 
 .submit {
-  font-size: 0.7em;
-  color: black;
+  font-size: 0.8em;
 }
 
+.price {
+  font-size: 0.8em;
+  color: white;
+}
 
 @media (max-width: 992px) {
   body {
