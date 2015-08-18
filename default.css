@@ -193,6 +193,12 @@ th {
   text-align: center;
 }
 
+.pizza-review {
+  text-align: center;
+  font-size: .9em;
+  color: white;
+}
+
 .thanks {
   visibility: hidden;
   margin-top: -40%;
