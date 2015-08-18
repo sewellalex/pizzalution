@@ -46,6 +46,7 @@ img {
   font-size: 5em;
   z-index: 1;
   line-height: 98%;
+  cursor:default;
 }
 
 .slogan {
@@ -54,6 +55,7 @@ img {
   font-size: 2em;
   z-index: 1;
   line-height: 110%;
+  cursor:default;
 }
 
 .button {
@@ -61,6 +63,42 @@ img {
   color: white;
   z-index: 2;
 }
+
+.info {
+  text-align: center;
+  color: white;
+  font-size: .9em;
+  z-index: 1;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.understand {
+  width: 900px;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  margin-left: 32%;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1em;
+}
+
+.description {
+  margin-top: 12%;
+  text-align: center;
+  font-size: .6em;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
 
 .build {
   height: 350px;
@@ -87,6 +125,7 @@ img {
   z-index: 1;
   margin-top: 20px;
   margin-bottom: 15px;
+  cursor:default;
 }
 
 .size {
@@ -95,14 +134,20 @@ img {
   font-size: 2em;
   z-index: 1;
   margin-bottom: 15px;
+  cursor:default;
 }
 
 label {
   color: white;
 }
 
+.final {
+  text-align: center;
+  font-size: 0.75em;
+  color: white;
+}
+
 .modal-dialog {
-  top: -30px;
   z-index: 2;
 }
 
@@ -134,9 +179,19 @@ th {
   text-align: center;
 }
 
+.thanks {
+  visibility: hidden;
+  margin-top: -40%;
+}
+
 .order {
   font-size: .5em;
 }
+
+.place {
+  font-size: .8em;
+}
+
 
 
 @media (max-width: 992px) {
@@ -175,5 +230,17 @@ th {
 
   .buy {
     margin-top: -50%;
+  }
+}
+
+@media (max-width: 645px) {
+  .thanks {
+  margin-top: -50%;
+  }
+}
+
+@media (max-width: 360px) {
+  .thanks {
+    margin-top: -465px;
   }
 }

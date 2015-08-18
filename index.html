@@ -24,6 +24,57 @@
       <div class="name col-md-12">PIZZALUTION</div>
       <div class="slogan col-md-12"><p>Your solution to the perfect pizza</p></div>
       <div class="button col-md-12"><button type="button" class="btn btn-danger" id="begin">Build Your Pizza</button></div>
+      <div class="info col-md-12" data-toggle="modal" data-target="#learn">What is Pizzalution?</div>
+      <!-- Information Modal -->
+      <div class="modal fade" id="learn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="understand modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel-three">What is Pizzalution?</h4>
+            </div>
+            <div class="modal-body">
+              <!-- body -->
+              <div class="instruct row">
+                <div class="col-md-4">
+                  <h4>Build Your Pizza</h4>
+                </div>
+                <div class="col-md-4">
+                  <h4>Choose Your Price</h4>
+                </div>
+                <div class="col-md-4">
+                  <h4>Place your order</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="icon" src="images/pizza-icon.png">
+                </div>
+                <div class="col-md-4">
+                  <img class="icon" src="images/check.png">
+                </div>
+                <div class="col-md-4">
+                  <img class="icon" src="images/dollar.png">
+                </div>
+              </div>
+              <div class="row">
+                <div class="description col-md-4">
+                  Pizzalution allows you to quickly build the exact pizza you want, using our easy and user-friendly pizza builder.
+                </div>
+                <div class="description col-md-4">
+                  Once you have built your perfect pizza, Pizzalution will retrieve the price of your order from every major pizza company.
+                </div>
+                <div class="description col-md-4">
+                  Compare the prices from your order; then select which option you want. Pizzalution allows you to order leaving the site.
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="container-fluid">
@@ -76,14 +127,32 @@
             <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
             <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
             <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="4"></li>-->
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-            <!-- progress bar -->
+              <!-- progress bar -->
               <div class="progress">
                 <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
                   5%
+                </div>
+              </div>
+              <div class="size col-md-12">Order Option</div>
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-danger">
+                  <input type="radio" name="size" id="pick-up" autocomplete="off"> Pick-up
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="size" id="delivery" autocomplete="off"> Delivery
+                </label>
+              </div>
+            </div>
+            <div class="item">
+            <!-- progress bar -->
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                  10%
                 </div>
               </div>
               <div class="size col-md-12">Choose Your Size</div>
@@ -279,9 +348,15 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="input-email" class="submit col-sm-2 control-label">Experation Date</label>
+                <label for="input-name" class="submit col-sm-2 control-label">Name on Card</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" id="input-experation" placeholder="Experation Date on Card">
+                  <input type="email" class="form-control" id="input-cardName" placeholder="Name on Card">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="input-email" class="submit col-sm-2 control-label">Expiration Date</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="input-expiration" placeholder="Expiration Date on Card">
                 </div>
               </div>
               <div class="form-group">
@@ -294,10 +369,18 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="price btn btn-danger" data-dismiss="modal">Place Order</button>
+            <button type="button" class="place btn btn-danger" data-dismiss="modal">Place Order</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="thanks container-fluid">
+    <div class="row">
+      <div class="size col-md-12">Thank you for your purchase</div>
+    </div>
+    <div class="row">
+      <div class="final col-md-12"><p>Your order has been placed and your pizza will be at your door soon. You will be receiving a confirmation email from Pizzalution as well as a confirmation email from the company you chose to order from. If you have any questions, please feel free to email us at <a href="mailto:support@pizzalution.com">support@pizzalution.com!</a></p></div>
     </div>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

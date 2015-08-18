@@ -12,5 +12,11 @@ $(document).ready(function() {
     $(".build").css("visibility", "hidden");
     $(".buy").css("visibility", "visible");
   });
+
+  $(".place").click(function() {
+    $(".buy").css("visibility", "hidden");
+    $(".thanks").css("visibility", "visible");
+  });
+
 });
 
