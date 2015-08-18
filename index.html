@@ -310,24 +310,70 @@
           <tr>
             <td>Domino's</td>
             <td>$9.47</td>
-            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
           </tr>
           <tr>
             <td>Pizza Hut</td>
             <td>$8.92</td>
-            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
           </tr>
           <tr>
             <td>Papa John's</td>
             <td>$8.21</td>
-            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
           </tr>
           <tr>
             <td>Little Caesars</td>
             <td>$7.84</td>
-            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#purchase">Order Now</button></td>
+            <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
           </tr>
         </table>
+      </div>
+    </div>
+    <!-- Review Order Modal -->
+    <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel-four">Review Order</h4>
+          </div>
+          <div class="purchase-modal modal-body">
+            <!-- Table -->
+            <div class="row">
+              <div class="size col-md-12">
+                <table class="table">
+                  <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                  </tr>
+                  <tr>
+                    <td>Medium Pizza<br>
+                      <p class="toppings">Marinara, Bacon, Ham, Peppers</p>
+                    </td>
+                    <td>$9.47</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery Fee</td>
+                    <td>$1.99</td>
+                  </tr>
+                  <tr>
+                    <td>Taxes and Fees</td>
+                    <td>$1.22</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td>$10.84</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="price btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#purchase">Review Complete</button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Complete Order Modal -->
@@ -365,11 +411,12 @@
                   <input type="password" class="form-control" id="input-security" placeholder="Security Code">
                 </div>
               </div>
+              <h4>Total: $10.84</h4>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="place btn btn-danger" data-dismiss="modal">Place Order</button>
+            <button type="button" class="place btn btn-danger" data-dismiss="modal">Make Payment</button>
           </div>
         </div>
       </div>

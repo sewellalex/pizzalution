@@ -133,7 +133,7 @@ h4 {
   color: white;
   font-size: 2em;
   z-index: 1;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   cursor:default;
 }
 
@@ -175,6 +175,20 @@ label {
   color: white;
 }
 
+.purchase-modal {
+  font-size: 0.5em;
+  color: white;
+}
+
+.toppings {
+  font-size: 0.5em;
+  color: white;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
 th {
   text-align: center;
 }
@@ -191,7 +205,6 @@ th {
 .place {
   font-size: .8em;
 }
-
 
 
 @media (max-width: 992px) {
