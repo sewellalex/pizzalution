@@ -49,6 +49,10 @@ img {
   cursor:default;
 }
 
+#remove {
+  font-size: .3em;
+}
+
 .slogan {
   text-align: center;
   color: white;
@@ -103,6 +107,10 @@ h4 {
 .build {
   height: 350px;
   visibility: visible;
+}
+
+.build-two {
+ visibility: hidden;
 }
 
 .carousel {
@@ -167,7 +175,7 @@ label {
 
 .buy {
   visibility: hidden;
-  margin-top: -25%;
+  margin-top: -50%;
 }
 
 .price {
@@ -218,7 +226,7 @@ th {
     font-size: 16px
   }
   .buy {
-    margin-top: -40%;
+    margin-top: -80%;
   }
 }
 
@@ -248,18 +256,36 @@ th {
   }
 
   .buy {
-    margin-top: -50%;
+    margin-top: -90%;
   }
 }
 
 @media (max-width: 645px) {
+  body {
+    font-size: 7px;
+  }
+
   .thanks {
   margin-top: -50%;
   }
+
+  .buy {
+    margin-top: -100%;
 }
+
+  @media (max-width: 550px) {
+    .buy {
+      margin-top: -140%;
+    }
+  }
+
 
 @media (max-width: 360px) {
   .thanks {
     margin-top: -465px;
+  }
+
+  .buy {
+    margin-top: -200%;
   }
 }

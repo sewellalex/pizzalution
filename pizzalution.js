@@ -10,12 +10,25 @@ $(document).ready(function() {
 
   $(".price").click(function() {
     $(".build").css("visibility", "hidden");
+    $(".build-two").css("visibility", "hidden");
     $(".buy").css("visibility", "visible");
   });
 
   $(".place").click(function() {
     $(".buy").css("visibility", "hidden");
     $(".thanks").css("visibility", "visible");
+  });
+
+  $(".duplicate").click(function() {
+    $('html,body').animate({scrollTop: $(window).scrollTop() + 500
+  });
+    $(".build-two").css("visibility", "visible");
+  });
+
+  $("#remove").click(function() {
+    $('html,body').animate({scrollTop: $(window).scrollTop() + -330
+    });
+    $(".build-two").css("visibility", "hidden");
   });
 
 });
