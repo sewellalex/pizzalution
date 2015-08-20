@@ -4,16 +4,17 @@
  // scroll page down when build pizza button is clicked
 $(document).ready(function() {
   $("#begin").click(function() {
-    $('html,body').animate({scrollTop: $(window).scrollTop() + 758
-    });
     $(".button").css("display", "none");
     $(".order-options").css("display", "block");
     $(".build").css("display", "block");
+    $(".name").css("display", "none");
+    $(".slogan").css("display", "none");
+    $(".info").css("display", "none");
   });
 
   $(".price").click(function() {
-    //$('html,body').animate({scrollTop: $(window).scrollTop() + 500
-    //});
+    $('html,body').animate({scrollTop: $(window).scrollTop() + 750
+    });
     $(".pizza-options").css("display", "none");
     $(".build").css("display", "none");
     $(".build-two").css("display", "none");
@@ -23,46 +24,12 @@ $(document).ready(function() {
   $(".place").click(function() {
     $(".buy").css("display", "none");
     $(".thanks").css("display", "block");
-  });
-
-  $(".duplicate").click(function() {
-    $('html,body').animate({scrollTop: $(window).scrollTop() + 500
-  });
-    $(".build-two").css("display", "block");
-  });
-
-  $("#remove").click(function() {
-    $('html,body').animate({scrollTop: $(window).scrollTop() + -330
-    });
-    $(".build-two").css("display", "none");
+    $(".opacity").css("opacity", "0.8");
   });
 
   $(".pick-up, .delivery").click(function() {
-    //$('html,body').animate({scrollTop: $(window).scrollTop() + 90
-    //});
     $(".order-options").css("display", "none");
     $(".pizza-size").css("display", "block");
-  });
-
-  $(".small, .medium, .large, .x-large").click(function() {
-    //$('html,body').animate({scrollTop: $(window).scrollTop() + 90
-    //});
-    $(".pizza-size").css("display", "none");
-    $(".pizza-sauce").css("display", "block");
-  });
-
-  $(".marinara, .bbq, .ranch, .none").click(function() {
-    //$('html,body').animate({scrollTop: $(window).scrollTop() + 90
-    //});
-    $(".pizza-sauce").css("display", "none");
-    $(".pizza-meats").css("display", "block");
-  });
-
-  $(".arrow-veggies").click(function() {
-    //$('html,body').animate({scrollTop: $(window).scrollTop() + 90
-    //});
-    $(".pizza-meats").css("display", "none");
-    $(".pizza-veggies").css("display", "block");
   });
 
   $(".arrow").click(function() {
@@ -70,9 +37,25 @@ $(document).ready(function() {
     $(".pizza-size").css("display", "none");
   });
 
+  $(".small, .medium, .large, .x-large").click(function() {
+    $(".pizza-size").css("display", "none");
+    $(".pizza-sauce").css("display", "block");
+  });
+
   $(".arrow-size").click(function() {
     $(".pizza-size").css("display", "block");
     $(".pizza-sauce").css("display", "none");
+  });
+
+
+  $(".marinara, .bbq, .ranch, .none").click(function() {
+    $(".pizza-sauce").css("display", "none");
+    $(".pizza-meats").css("display", "block");
+  });
+
+  $(".arrow-veggies").click(function() {
+    $(".pizza-meats").css("display", "none");
+    $(".pizza-veggies").css("display", "block");
   });
 
   $(".arrow-sauce").click(function() {
@@ -90,8 +73,10 @@ $(document).ready(function() {
     $(".pizza-veggies").css("display", "none");
   });
 
-
-
+  $(".arrow-back").click(function() {
+    $(".pizza-options").css("display", "none");
+    $(".pizza-veggies").css("display", "block");
+  });
 
 });
 
