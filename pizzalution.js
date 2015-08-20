@@ -10,6 +10,7 @@ $(document).ready(function() {
     $(".name").css("display", "none");
     $(".slogan").css("display", "none");
     $(".info").css("display", "none");
+    $(".opacity").css("opacity", "0.8");
   });
 
   $(".price").click(function() {
