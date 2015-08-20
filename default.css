@@ -37,7 +37,13 @@ img {
 }
 
 .space {
-  height: 220px;
+  height: 200px;
+  color: white;
+}
+
+.space-two {
+  height: 25px;
+  color: white;
 }
 
 .name {
@@ -47,10 +53,6 @@ img {
   z-index: 1;
   line-height: 98%;
   cursor:default;
-}
-
-#remove {
-  font-size: .3em;
 }
 
 .slogan {
@@ -66,6 +68,71 @@ img {
   text-align: center;
   color: white;
   z-index: 2;
+}
+
+#remove {
+  font-size: .3em;
+}
+
+.back {
+  font-size: .4em;
+  color: white;
+  margin-top: 10px;
+}
+
+.back-size {
+  font-size: .4em;
+  color: white;
+  margin-top: 10px;
+}
+
+.arrow {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-size {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-sauce {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-meats {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+
+.arrow-veggies {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-options {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 .info {
@@ -105,12 +172,13 @@ h4 {
 
 
 .build {
-  height: 350px;
-  visibility: visible;
+  height: 768px;
+  display: none;
 }
 
 .build-two {
- visibility: hidden;
+  display: none;
+ /*visibility: hidden;*/
 }
 
 .carousel {
@@ -118,9 +186,9 @@ h4 {
   height: 320px;
 }
 
-.progress {
-  margin-bottom: 0;
-}
+/*.progress {*/
+  /*margin-bottom: 0;*/
+/*}*/
 
 .btn {
   font-size: 2em;
@@ -131,17 +199,18 @@ h4 {
   color: white;
   font-size: 2em;
   z-index: 1;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  /*margin-bottom: 15px;*/
   cursor:default;
 }
 
 .size {
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   z-index: 1;
-  /*margin-bottom: 15px;*/
+  margin-top: 10px;
+  margin-bottom: 20px;
   cursor:default;
 }
 
@@ -174,8 +243,9 @@ label {
 }
 
 .buy {
-  visibility: hidden;
-  margin-top: -50%;
+  display: none;
+  /*visibility: hidden;*/
+  /*margin-top: -50%;*/
 }
 
 .price {
@@ -201,6 +271,10 @@ th {
   text-align: center;
 }
 
+.order-options {
+  display: none;
+}
+
 .pizza-review {
   text-align: center;
   font-size: .9em;
@@ -208,8 +282,7 @@ th {
 }
 
 .thanks {
-  visibility: hidden;
-  margin-top: -40%;
+  display: none;
 }
 
 .order {
@@ -220,13 +293,34 @@ th {
   font-size: .8em;
 }
 
+.delivery {
+  display: block;
+}
+
+.pizza-size {
+  display: none;
+}
+
+.pizza-sauce {
+  display: none;
+}
+
+.pizza-meats {
+  display: none;
+}
+
+.pizza-veggies {
+  display: none;
+}
+
+.pizza-options {
+  display: none;
+}
+
 
 @media (max-width: 992px) {
   body {
     font-size: 16px
-  }
-  .buy {
-    margin-top: -80%;
   }
 }
 
@@ -255,8 +349,12 @@ th {
     height: 30px;
   }
 
-  .buy {
-    margin-top: -90%;
+  #review {
+    font-size: 2em;
+  }
+
+  .final {
+    font-size: 2em;
   }
 }
 
@@ -265,27 +363,17 @@ th {
     font-size: 7px;
   }
 
-  .thanks {
-  margin-top: -50%;
+  #review {
+    font-size: 2em;
   }
 
-  .buy {
-    margin-top: -100%;
+  .size {
+    font-size: 4em;
+  }
+
+  .final {
+    font-size: 2em;
+  }
+
 }
 
-  @media (max-width: 550px) {
-    .buy {
-      margin-top: -140%;
-    }
-  }
-
-
-@media (max-width: 360px) {
-  .thanks {
-    margin-top: -465px;
-  }
-
-  .buy {
-    margin-top: -200%;
-  }
-}

@@ -15,7 +15,7 @@
   <div class="home container-fluid">
     <div class="row">
       <div class="opacity"></div>
-      <img src="images/pizza-stock.jpg">
+      <img class="background" src="images/pizza-stock.jpg">
     </div>
     <div class="row">
       <div class="space col-md-12"></div>
@@ -78,445 +78,438 @@
     </div>
   </div>
   <div class="container-fluid">
-    <div class="build">
-      <div class="row">
-        <!-- Get price modal -->
-        <div class="modal fade" id="get-price" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Ordering Information</h4>
-              </div>
-              <div class="modal-body">
-                <!-- Form -->
-                <form class="submit form-horizontal">
-                  <div class="form-group">
-                    <label for="input-name" class="submit col-sm-2 control-label">Name</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="input-name" placeholder="Name">
-                    </div>
+    <div class="row">
+      <!-- Get price modal -->
+      <div class="modal fade" id="get-price" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Ordering Information</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Form -->
+              <form class="submit form-horizontal">
+                <div class="form-group">
+                  <label for="input-name" class="submit col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="input-name" placeholder="Name">
                   </div>
-                  <div class="form-group">
-                    <label for="input-email" class="submit col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="input-email" placeholder="Address">
-                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="input-email" class="submit col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="input-email" placeholder="Address">
                   </div>
-                  <div class="form-group">
-                    <label for="input-zip" class="submit col-sm-2 control-label">Zip Code</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="input-zip" placeholder="Zip Code">
-                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="input-zip" class="submit col-sm-2 control-label">Zip Code</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="input-zip" placeholder="Zip Code">
                   </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="price btn btn-danger" data-dismiss="modal">Get Prices</button>
-              </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="price btn btn-danger" data-dismiss="modal">Get Prices</button>
             </div>
           </div>
-        </div>
-        <div class="building col-md-12">Build Your Pizza</div>
-        <!-- Carousel -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
-            <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
-            <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-            <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
-            <!--<li data-target="#carousel-example-generic" data-slide-to="4"></li>-->
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                  5%
-                </div>
-              </div>
-              <div class="size col-md-12">Order Option</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="pick-up" autocomplete="off"> Pick-up
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="delivery" autocomplete="off"> Delivery
-                </label>
-              </div>
-            </div>
-            <div class="item">
-            <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                  10%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Size</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="small" autocomplete="off"> Small
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="medium" autocomplete="off"> Medium
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="large" autocomplete="off"> Large
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="x-large" autocomplete="off"> X-Large
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-                  25%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Sauce</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="marinara" autocomplete="off"> Marinara
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="bbq" autocomplete="off"> BBQ
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="ranch" autocomplete="off"> Ranch
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="none" autocomplete="off"> None
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                  50%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Meats</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Pepperoni
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Ham
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Bacon
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Sausage
-                </label>
-              </div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Spicy Sausage
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Anchovies
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Chicken
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                  75%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Veggies</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Mushrooms
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Peppers
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Pineapple
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Black Olives
-                </label>
-              </div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Tomatoes
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Jalapenos
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Onion
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
-                  100%
-                </div>
-              </div>
-              <div class="size col-md-12">Options</div>
-              <!--<div class="extra col-md-12"></div>-->
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="option" id="duplicate" autocomplete="off" checked>Duplicate Pizza
-                </label>
-                <label class="duplicate btn btn-danger">
-                  <input type="radio" name="option" id="new" autocomplete="off">Create New Pizza
-                </label>
-                <label class="btn btn-danger" data-toggle="modal" data-target="#get-price">
-                  <input type="radio" name="option" id="price" autocomplete="off"> Get Price
-                </label>
-              </div>
-            </div>
-          </div>
-           <!--Controls-->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="build-two">
+  <div class="build">
+    <div class="row">
+      <div class="space-two col-md-12"></div>
+    </div>
+    <!-- Build Your Pizza -->
+    <div class="order-options container-fluid">
       <div class="row">
-        <!-- Get price modal -->
-        <!--<div class="modal fade" id="get-price" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
-          <!--<div class="modal-dialog" role="document">-->
-            <!--<div class="modal-content">-->
-              <!--<div class="modal-header">-->
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
-                <!--<h4 class="modal-title" id="myModalLabel">Ordering Information</h4>-->
-              <!--</div>-->
-              <!--<div class="modal-body">-->
-                <!--&lt;!&ndash; Form &ndash;&gt;-->
-                <!--<form class="submit form-horizontal">-->
-                  <!--<div class="form-group">-->
-                    <!--<label for="input-name" class="submit col-sm-2 control-label">Name</label>-->
-                    <!--<div class="col-sm-10">-->
-                      <!--<input type="text" class="form-control" id="input-name" placeholder="Name">-->
-                    <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="form-group">-->
-                    <!--<label for="input-email" class="submit col-sm-2 control-label">Email</label>-->
-                    <!--<div class="col-sm-10">-->
-                      <!--<input type="email" class="form-control" id="input-email" placeholder="Address">-->
-                    <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="form-group">-->
-                    <!--<label for="input-zip" class="submit col-sm-2 control-label">Zip Code</label>-->
-                    <!--<div class="col-sm-10">-->
-                      <!--<input type="text" class="form-control" id="input-zip" placeholder="Zip Code">-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</form>-->
-              <!--</div>-->
-              <!--<div class="modal-footer">-->
-                <!--<button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>-->
-                <!--<button type="button" class="price btn btn-danger" data-dismiss="modal">Get Prices</button>-->
-              <!--</div>-->
+        <div class="size col-md-12">Order Option</div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="pick-up btn btn-danger">
+            <input type="radio" name="size" autocomplete="off"> Pick-up
+          </label>
+          <label class="delivery btn btn-danger">
+            <input type="radio" name="size" autocomplete="off"> Delivery
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Size -->
+    <div class="pizza-size container-fluid">
+      <div class="row">
+        <div class="size col-md-12">
+        <label class="arrow"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Size</div>
+      </div>
+      <div class="row">
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+            10%
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="small btn btn-danger">
+            <input type="radio" name="size" autocomplete="off"> Small
+          </label>
+          <label class="medium btn btn-danger">
+            <input type="radio" name="size" autocomplete="off"> Medium
+          </label>
+          <label class="large btn btn-danger">
+            <input type="radio" name="size" autocomplete="off"> Large
+          </label>
+          <label class="x-large btn btn-danger">
+            <input type="radio" name="size" autocomplete="off"> X-Large
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Sauce -->
+    <div class="pizza-sauce container-fluid">
+      <div class="row">
+        <div class="size col-md-12">
+          <label class="arrow-size"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Sauce</div>
+      </div>
+      <div class="row">
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+            25%
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="marinara btn btn-danger">
+            <input type="radio" name="sauce" autocomplete="off"> Marinara
+          </label>
+          <label class="bbq btn btn-danger">
+            <input type="radio" name="sauce" autocomplete="off"> BBQ
+          </label>
+          <label class="ranch btn btn-danger">
+            <input type="radio" name="sauce" autocomplete="off"> Ranch
+          </label>
+          <label class="none btn btn-danger">
+            <input type="radio" name="sauce" autocomplete="off"> None
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Meat -->
+    <div class="pizza-meats container-fluid">
+      <div class="row">
+        <div class="size col-md-12">
+          <label class="arrow-sauce"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Meats  <label class="arrow-veggies"><img class="arrow" src="images/front-arrow.png"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+            50%
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="pepperoni btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Pepperoni
+          </label>
+          <label class="ham btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Ham
+          </label>
+          <label class="bacon btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Bacon
+          </label>
+          <label class="sausage btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Sausage
+          </label>
+        </div>
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="spicy btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Spicy Sausage
+          </label>
+          <label class="anchovies btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Anchovies
+          </label>
+          <label class="chicken btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Chicken
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Veggies -->
+    <div class="pizza-veggies container-fluid">
+      <div class="row">
+        <div class="size col-md-12">
+          <label class="arrow-meats"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Veggies  <label class="arrow-options"><img class="arrow" src="images/front-arrow.png"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+            75%
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Mushrooms
+          </label>
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Peppers
+          </label>
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Pineapple
+          </label>
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Black Olives
+          </label>
+        </div>
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Tomatoes
+          </label>
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Jalapenos
+          </label>
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off"> Onion
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Options -->
+    <div class="pizza-options container-fluid">
+      <div class="row">
+        <div class="size col-md-12">
+          <label class="arrow-veggies"><img class="arrow" src="images/back-arrow.png"></label>  Options
+        </div>
+      </div>
+      <div class="row">
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+            100%
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="btn btn-danger">
+            <input type="radio" name="option" id="duplicate" autocomplete="off" checked>Duplicate Pizza
+          </label>
+          <label class="duplicate btn btn-danger">
+            <input type="radio" name="option" id="new" autocomplete="off">Create New Pizza
+          </label>
+          <label class="btn btn-danger" data-toggle="modal" data-target="#get-price">
+            <input type="radio" name="option" id="price" autocomplete="off"> Get Price
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <img class="background" src="images/pizza-bottom.png">
+    </div>
+  </div>
+  <!-- Second Pizza -->
+    <!--<div class="build-two">-->
+      <!--&lt;!&ndash; Build Your Pizza &ndash;&gt;-->
+      <!--<div class="order-options container-fluid">-->
+        <!--<div class="row">-->
+          <!--<div class="size col-md-12">Order Option</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="pick-up btn btn-danger">-->
+              <!--<input type="radio" name="size" autocomplete="off"> Pick-up-->
+            <!--</label>-->
+            <!--<label class="delivery btn btn-danger">-->
+              <!--<input type="radio" name="size" autocomplete="off"> Delivery-->
+            <!--</label>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Choose Size &ndash;&gt;-->
+      <!--<div class="pizza-size container-fluid">-->
+        <!--<div class="row">-->
+          <!--<div class="size col-md-12">-->
+            <!--<label class="arrow"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Size</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">-->
+              <!--10%-->
             <!--</div>-->
           <!--</div>-->
         <!--</div>-->
-        <div class="building col-md-12">Build Your Pizza   <button type="button" class="btn btn-danger" id="remove">Remove Pizza</button></div>
-        <!-- Carousel -->
-        <div id="two-carousel-example-generic" class="two carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <!--<li data-target="#two-carousel-example-generic" data-slide-to="0" class="active"></li>-->
-            <!--<li data-target="#two-carousel-example-generic" data-slide-to="1"></li>-->
-            <!--<li data-target="#two-carousel-example-generic" data-slide-to="2"></li>-->
-            <!--<li data-target="#two-carousel-example-generic" data-slide-to="3"></li>-->
-            <!--<li data-target="#two-carousel-example-generic" data-slide-to="4"></li>-->
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                  5%
-                </div>
-              </div>
-              <div class="size col-md-12">Order Option</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="pick-up-two" autocomplete="off"> Pick-up
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="delivery-two" autocomplete="off"> Delivery
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                  10%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Size</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="small-two" autocomplete="off"> Small
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="medium-two" autocomplete="off"> Medium
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="large-two" autocomplete="off"> Large
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="size" id="x-large-two" autocomplete="off"> X-Large
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-                  25%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Sauce</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="marinara-two" autocomplete="off"> Marinara
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="bbq-two" autocomplete="off"> BBQ
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="ranch-two" autocomplete="off"> Ranch
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="sauce" id="none-two" autocomplete="off"> None
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                  50%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Meats</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Pepperoni
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Ham
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Bacon
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Sausage
-                </label>
-              </div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Spicy Sausage
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Anchovies
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Chicken
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                  75%
-                </div>
-              </div>
-              <div class="size col-md-12">Choose Your Veggies</div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Mushrooms
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Peppers
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Pineapple
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Black Olives
-                </label>
-              </div>
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Tomatoes
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Jalapenos
-                </label>
-                <label class="btn btn-danger">
-                  <input type="checkbox" autocomplete="off"> Onion
-                </label>
-              </div>
-            </div>
-            <div class="item">
-              <!-- progress bar -->
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
-                  100%
-                </div>
-              </div>
-              <div class="size col-md-12">Options</div>
-              <!--<div class="extra col-md-12"></div>-->
-              <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-danger">
-                  <input type="radio" name="option" id="duplicate-two" autocomplete="off" checked>Duplicate Pizza
-                </label>
-                <label class="btn btn-danger">
-                  <input type="radio" name="option" id="new-two" autocomplete="off">Create New Pizza
-                </label>
-                <label class="btn btn-danger" data-toggle="modal" data-target="#get-price">
-                  <input type="radio" name="option" id="price-two" autocomplete="off"> Get Price
-                </label>
-              </div>
-            </div>
-          </div>
-          <!--Controls-->
-          <a class="left carousel-control" href="#two-carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#two-carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <!--<div class="row">-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="small btn btn-danger">-->
+              <!--<input type="radio" name="size" autocomplete="off"> Small-->
+            <!--</label>-->
+            <!--<label class="medium btn btn-danger">-->
+              <!--<input type="radio" name="size" autocomplete="off"> Medium-->
+            <!--</label>-->
+            <!--<label class="large btn btn-danger">-->
+              <!--<input type="radio" name="size" autocomplete="off"> Large-->
+            <!--</label>-->
+            <!--<label class="x-large btn btn-danger">-->
+              <!--<input type="radio" name="size" autocomplete="off"> X-Large-->
+            <!--</label>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Choose Sauce &ndash;&gt;-->
+      <!--<div class="pizza-sauce container-fluid">-->
+        <!--<div class="row">-->
+          <!--<div class="size col-md-12">-->
+            <!--<label class="arrow-size"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Sauce</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">-->
+              <!--25%-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="marinara btn btn-danger">-->
+              <!--<input type="radio" name="sauce" autocomplete="off"> Marinara-->
+            <!--</label>-->
+            <!--<label class="bbq btn btn-danger">-->
+              <!--<input type="radio" name="sauce" autocomplete="off"> BBQ-->
+            <!--</label>-->
+            <!--<label class="ranch btn btn-danger">-->
+              <!--<input type="radio" name="sauce" autocomplete="off"> Ranch-->
+            <!--</label>-->
+            <!--<label class="none btn btn-danger">-->
+              <!--<input type="radio" name="sauce" autocomplete="off"> None-->
+            <!--</label>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Choose Meat &ndash;&gt;-->
+      <!--<div class="pizza-meats container-fluid">-->
+        <!--<div class="row">-->
+          <!--<div class="size col-md-12">-->
+            <!--<label class="arrow-sauce"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Meats  <label class="arrow-veggies"><img class="arrow" src="images/front-arrow.png"></label>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">-->
+              <!--50%-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="pepperoni btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Pepperoni-->
+            <!--</label>-->
+            <!--<label class="ham btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Ham-->
+            <!--</label>-->
+            <!--<label class="bacon btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Bacon-->
+            <!--</label>-->
+            <!--<label class="sausage btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Sausage-->
+            <!--</label>-->
+          <!--</div>-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="spicy btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Spicy Sausage-->
+            <!--</label>-->
+            <!--<label class="anchovies btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Anchovies-->
+            <!--</label>-->
+            <!--<label class="chicken btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Chicken-->
+            <!--</label>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Choose Veggies &ndash;&gt;-->
+      <!--<div class="pizza-veggies container-fluid">-->
+        <!--<div class="row">-->
+          <!--<div class="size col-md-12">-->
+            <!--<label class="arrow-meats"><img class="arrow" src="images/back-arrow.png"></label>  Choose Your Veggies  <label class="arrow-options"><img class="arrow" src="images/front-arrow.png"></label>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">-->
+              <!--75%-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Mushrooms-->
+            <!--</label>-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Peppers-->
+            <!--</label>-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Pineapple-->
+            <!--</label>-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Black Olives-->
+            <!--</label>-->
+          <!--</div>-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Tomatoes-->
+            <!--</label>-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Jalapenos-->
+            <!--</label>-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="checkbox" autocomplete="off"> Onion-->
+            <!--</label>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Choose Options &ndash;&gt;-->
+      <!--<div class="pizza-options container-fluid">-->
+        <!--<div class="row">-->
+          <!--<div class="size col-md-12">-->
+            <!--<label class="arrow-veggies"><img class="arrow" src="images/back-arrow.png"></label>  Options-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">-->
+              <!--100%-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="btn-group btn-group-justified" data-toggle="buttons">-->
+            <!--<label class="btn btn-danger">-->
+              <!--<input type="radio" name="option" id="duplicate" autocomplete="off" checked>Duplicate Pizza-->
+            <!--</label>-->
+            <!--<label class="duplicate btn btn-danger">-->
+              <!--<input type="radio" name="option" id="new" autocomplete="off">Create New Pizza-->
+            <!--</label>-->
+            <!--<label class="btn btn-danger" data-toggle="modal" data-target="#get-price">-->
+              <!--<input type="radio" name="option" id="price" autocomplete="off"> Get Price-->
+            <!--</label>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<button type="button" class="btn btn-danger" id="remove">Remove Pizza</button></div>-->
+
   <div class="buy container-fluid">
     <div class="row">
       <div class="size col-md-12">Choose Your Price</div>
@@ -610,26 +603,26 @@
             <form class="submit form-horizontal">
               <div class="form-group">
                 <label for="input-name" class="submit col-sm-2 control-label">Card Number</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="input-card" placeholder="Card Number">
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="input-card" placeholder="Card Number">
                 </div>
               </div>
               <div class="form-group">
                 <label for="input-name" class="submit col-sm-2 control-label">Name on Card</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="input-cardName" placeholder="Name on Card">
+                  <input type="text" class="form-control" id="input-cardName" placeholder="Name on Card">
                 </div>
               </div>
               <div class="form-group">
-                <label for="input-email" class="submit col-sm-2 control-label">Expiration Date</label>
+                <label for="input-name" class="submit col-sm-2 control-label">Expiration Date</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" id="input-expiration" placeholder="Expiration Date on Card">
+                  <input type="text" class="form-control" id="input-expiration" placeholder="Expiration Date on Card">
                 </div>
               </div>
               <div class="form-group">
-                <label for="input-zip" class="submit col-sm-2 control-label">Security Code</label>
+                <label for="input-name" class="submit col-sm-2 control-label">Security Code</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" id="input-security" placeholder="Security Code">
+                  <input type="text" class="form-control" id="input-security" placeholder="Security Code">
                 </div>
               </div>
               <h4>Total: $10.84</h4>
