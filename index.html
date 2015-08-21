@@ -1,1 +1,457 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Pizzalution</title>
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="../default.css" rel="stylesheet">
+</head>
+<body>
+<div class="home container-fluid">
+  <div class="row">
+    <div class="opacity"></div>
+    <img class="background" src="../images/pizza-stock.jpg">
+  </div>
+  <div class="row">
+    <div class="space col-md-12"></div>
+  </div>
+  <div class="row">
+    <div class="name col-md-12">PIZZALUTION</div>
+    <div class="slogan col-md-12"><p>Your solution to the perfect pizza</p></div>
+    <div class="button col-md-12"><button type="button" class="btn btn-danger" id="begin">Build Your Pizza</button></div>
+    <div class="info col-md-12" data-toggle="modal" data-target="#learn"><label><img class="help" src="../images/help.png"></label></div>
+  </div>
+  <div class="row">
+    <div class="build">
+      <!-- Build Your Pizza -->
+      <div class="order-options">
+        <div class="row">
+          <div class="size col-md-12">Order Option</div>
+        </div>
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="pick-up btn btn-danger">
+              <input type="radio" name="size" autocomplete="off"> Pick-up
+            </label>
+            <label class="delivery btn btn-danger">
+              <input type="radio" name="size" autocomplete="off"> Delivery
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Choose Size -->
+      <div class="pizza-size container-fluid">
+        <div class="row">
+          <div class="size col-md-12">
+            <label class="arrow"><img class="arrow" src="../images/back-arrow.png"></label>  Choose Your Size</div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="status row">
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger col-md-12" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+              10%
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="small btn btn-danger">
+              <input type="radio" name="size" autocomplete="off"> Small
+            </label>
+            <label class="medium btn btn-danger">
+              <input type="radio" name="size" autocomplete="off"> Medium
+            </label>
+            <label class="large btn btn-danger">
+              <input type="radio" name="size" autocomplete="off"> Large
+            </label>
+            <label class="x-large btn btn-danger">
+              <input type="radio" name="size" autocomplete="off"> X-Large
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Choose Sauce -->
+      <div class="pizza-sauce container-fluid">
+        <div class="row">
+          <div class="size col-md-12">
+            <label class="arrow-size"><img class="arrow-size" src="../images/back-arrow.png"></label>  Choose Your Sauce</div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="row">
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger col-md-12" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+              25%
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="marinara btn btn-danger">
+              <input type="radio" name="sauce" autocomplete="off"> Marinara
+            </label>
+            <label class="bbq btn btn-danger">
+              <input type="radio" name="sauce" autocomplete="off"> BBQ
+            </label>
+            <label class="ranch btn btn-danger">
+              <input type="radio" name="sauce" autocomplete="off"> Ranch
+            </label>
+            <label class="none btn btn-danger">
+              <input type="radio" name="sauce" autocomplete="off"> None
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Choose Meat -->
+      <div class="pizza-meats container-fluid">
+        <div class="row">
+          <div class="size col-md-12">
+            <label class="arrow-sauce"><img class="arrow-sauce" src="../images/back-arrow.png"></label>  Choose Your Meats  <label class="arrow-veggies"><img class="arrow-veggies" src="../images/front-arrow.png"></label>
+          </div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="row">
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger col-md-12" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+              50%
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="pepperoni btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Pepperoni
+            </label>
+            <label class="ham btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Ham
+            </label>
+            <label class="bacon btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Bacon
+            </label>
+            <label class="sausage btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Sausage
+            </label>
+          </div>
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="spicy btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Spicy Sausage
+            </label>
+            <label class="anchovies btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Anchovies
+            </label>
+            <label class="chicken btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Chicken
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Choose Veggies -->
+      <div class="pizza-veggies container-fluid">
+        <div class="row">
+          <div class="size col-md-12">
+            <label class="arrow-meats"><img class="arrow-meats" src="../images/back-arrow.png"></label>  Choose Your Veggies  <label class="arrow-options"><img class="arrow-options" src="../images/front-arrow.png"></label>
+          </div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="row">
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger col-md-12" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+              75%
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Mushrooms
+            </label>
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Peppers
+            </label>
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Pineapple
+            </label>
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Black Olives
+            </label>
+          </div>
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Tomatoes
+            </label>
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Jalapenos
+            </label>
+            <label class="btn btn-danger">
+              <input type="checkbox" autocomplete="off"> Onion
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Choose Options -->
+      <div class="pizza-options container-fluid">
+        <div class="row">
+          <div class="size col-md-12">
+            <label class="arrow-back"><img class="arrow-back" src="../images/back-arrow.png"></label>  Options
+          </div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="row">
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger col-md-12" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+              100%
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="btn btn-danger">
+              <input type="radio" name="option" id="duplicate" autocomplete="off" checked>Duplicate Pizza
+            </label>
+            <label class="duplicate btn btn-danger">
+              <input type="radio" name="option" id="new" autocomplete="off">Create New Pizza
+            </label>
+            <label class="btn btn-danger" data-toggle="modal" data-target="#get-price">
+              <input type="radio" name="option" id="price" autocomplete="off"> Get Price
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="thanks">
+    <div class="row">
+      <div class="size col-md-12">Thank you for your purchase</div>
+    </div>
+    <div class="row">
+      <div class="final col-md-12"><p>Your order has been placed and your pizza will be at your door soon. You will be receiving a confirmation email from Pizzalution as well as a confirmation email from the company you chose to order from. If you have any questions, please feel free to email us at <a href="mailto:support@pizzalution.com">support@pizzalution.com!</a></p></div>
+    </div>
+  </div>
+</div>
+<!-- Information Modal -->
+<div class="modal fade" id="learn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="understand modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel-three">What is Pizzalution?</h4>
+      </div>
+      <div class="modal-body">
+        <!-- body -->
+        <div class="instruct row">
+          <div class="col-md-4">
+            <h4>Build Your Pizza</h4>
+          </div>
+          <div class="col-md-4">
+            <h4>Choose Your Price</h4>
+          </div>
+          <div class="col-md-4">
+            <h4>Place your order</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="icon" src="../images/pizza-icon.png">
+          </div>
+          <div class="col-md-4">
+            <img class="icon" src="../images/check.png">
+          </div>
+          <div class="col-md-4">
+            <img class="icon" src="../images/dollar.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="description col-md-4">
+            Pizzalution allows you to quickly build the exact pizza you want, using our easy and user-friendly pizza builder.
+          </div>
+          <div class="description col-md-4">
+            Once you have built your perfect pizza, Pizzalution will retrieve the price of your order from every major pizza company.
+          </div>
+          <div class="description col-md-4">
+            Compare the prices from your order; then select which option you want. Pizzalution allows you to order leaving the site.
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Get price modal -->
+<div class="modal fade" id="get-price" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ordering Information</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Form -->
+        <form class="submit form-horizontal">
+          <div class="form-group">
+            <label for="input-name" class="submit col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="input-name" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-email" class="submit col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="input-email" placeholder="Address">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-zip" class="submit col-sm-2 control-label">Zip Code</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="input-zip" placeholder="Zip Code">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="price btn btn-danger" data-dismiss="modal">Get Prices</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="buy container-fluid">
+  <div class="row">
+    <div class="size col-md-12">Choose Your Price</div>
+    <div class="pizza-review col-md-12">One Medium Pizza: marinara, ham, bacon, and peppers</div>
+    <div class="size col-md-12">
+      <table class="table">
+        <tr>
+          <th>Company</th>
+          <th>Price</th>
+          <th>Order</th>
+        </tr>
+        <tr>
+          <td>Domino's</td>
+          <td>$9.47</td>
+          <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
+        </tr>
+        <tr>
+          <td>Pizza Hut</td>
+          <td>$8.92</td>
+          <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
+        </tr>
+        <tr>
+          <td>Papa John's</td>
+          <td>$8.21</td>
+          <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
+        </tr>
+        <tr>
+          <td>Little Caesars</td>
+          <td>$7.84</td>
+          <td><button type="button" class="order btn btn-danger" data-toggle="modal" data-target="#review">Order Now</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Review Order Modal -->
+  <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel-four">Review Order</h4>
+        </div>
+        <div class="purchase-modal modal-body">
+          <!-- Table -->
+          <div class="row">
+            <div class="size col-md-12">
+              <table class="table">
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                </tr>
+                <tr>
+                  <td>Medium Pizza<br>
+                    <p class="toppings">Marinara, Bacon, Ham, Peppers</p>
+                  </td>
+                  <td>$9.47</td>
+                </tr>
+                <tr>
+                  <td>Delivery Fee</td>
+                  <td>$1.99</td>
+                </tr>
+                <tr>
+                  <td>Taxes and Fees</td>
+                  <td>$1.22</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>$10.84</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="price btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#purchase">Review Complete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Complete Order Modal -->
+  <div class="modal fade" id="purchase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel-two">Complete Purchase</h4>
+        </div>
+        <div class="modal-body">
+          <!-- Form -->
+          <form class="submit form-horizontal">
+            <div class="form-group">
+              <label for="input-name" class="submit col-sm-2 control-label">Card Number</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="input-card" placeholder="Card Number">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-name" class="submit col-sm-2 control-label">Name on Card</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="input-cardName" placeholder="Name on Card">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-name" class="submit col-sm-2 control-label">Expiration Date</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="input-expiration" placeholder="Expiration Date on Card">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-name" class="submit col-sm-2 control-label">Security Code</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="input-security" placeholder="Security Code">
+              </div>
+            </div>
+            <h4>Total: $10.84</h4>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="submit btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="place btn btn-danger" data-dismiss="modal">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="../pizzalution.js"></script>
+</body>
+</html>
