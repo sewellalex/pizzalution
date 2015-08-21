@@ -77,8 +77,15 @@ body {
 
 .button {
   text-align: center;
+  margin-bottom: 10px;
   color: white;
   z-index: 2;
+}
+
+.help {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
 }
 
 #remove {
@@ -356,12 +363,17 @@ th {
     height: 300px;
   }
 
-  img {
+  .background {
     height: 300px;
   }
 
   .space {
     height: 100px;
+  }
+
+  .help {
+    height: 40px;
+    width: 40px;
   }
 
   .extra {
