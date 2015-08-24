@@ -4,137 +4,21 @@
 }
 
 body {
-  background-color: #221E20;
   font-family: Genome;
-  /*font-weight: bold;*/
+  background-color: #221E20;
   font-size: 24px;
 }
 
-.home {
-  height: 735px;
-}
-
-.opacity {
-  position: absolute;
-  width: 100%;
-  height: 735px;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  object-fit: cover;
-  background-color: black;
-  opacity: 0.6;
-}
-
-.background {
-  position: absolute;
-  width: 100%;
-  height: 735px;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  object-fit: cover;
-}
-
-.space {
-  height: 200px;
-  color: white;
-}
-
-.space-two {
-  height: 25px;
-  color: white;
-}
-
-.name {
+h4 {
   text-align: center;
-  color: white;
-  font-size: 5em;
-  z-index: 1;
-  line-height: 98%;
-  cursor:default;
+  font-size: 1em;
 }
 
-.slogan {
+th {
   text-align: center;
-  color: white;
-  font-size: 2em;
-  z-index: 1;
-  line-height: 110%;
-  cursor:default;
-}
-
-.button {
-  text-align: center;
-  margin-bottom: 10px;
-  color: white;
-  z-index: 2;
-}
-
-.help {
-  height: 60px;
-  width: 60px;
-  cursor: pointer;
-}
-
-#remove {
-  font-size: .3em;
-}
-
-.back {
-  font-size: .4em;
-  color: white;
-  margin-top: 10px;
-}
-
-.back-size {
-  font-size: .4em;
-  color: white;
-  margin-top: 10px;
 }
 
 .arrow {
-  position: relative;
-  margin-top: -5px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.arrow-size {
-  position: relative;
-  margin-top: -5px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.arrow-sauce {
-  position: relative;
-  margin-top: -5px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.arrow-meats {
-  position: relative;
-  margin-top: -5px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-
-.arrow-veggies {
-  position: relative;
-  margin-top: -5px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.arrow-options {
   position: relative;
   margin-top: -5px;
   height: 40px;
@@ -150,17 +34,98 @@ body {
   cursor: pointer;
 }
 
-.info {
-  text-align: center;
-  color: white;
-  font-size: .9em;
-  z-index: 1;
-  padding-top: 5px;
+.arrow-meats {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
 }
 
-.understand {
-  width: 900px;
+.arrow-options {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-sauce {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-size {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-veggies {
+  position: relative;
+  margin-top: -5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 735px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.btn {
+  font-size: 2em;
+}
+
+.build {
+  height: 768px;
+  display: none;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 10px;
+  z-index: 2;
+  color: white;
+}
+
+.buy {
+  display: none;
+  /*visibility: hidden;*/
+  /*margin-top: -50%;*/
+}
+
+.description {
+  margin-top: 3px;
+  text-align: center;
+  font-size: .6em;
+}
+
+.final {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+
+.help {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.home {
+  height: 735px;
 }
 
 .icon {
@@ -170,47 +135,104 @@ body {
   margin-left: 32%;
 }
 
-h4 {
+.info {
   text-align: center;
-  font-size: 1em;
+  padding-top: 5px;
+  z-index: 1;
+  font-size: .9em;
+  color: white;
+  cursor: pointer;
 }
 
-.description {
-  margin-top: 3px;
-  text-align: center;
-  font-size: .6em;
+.modal-content {
+  background-color: #221E20;
+  color: white;
+}
+
+.modal-dialog {
+  z-index: 2;
 }
 
 .modal-footer {
   text-align: center;
 }
 
+.modal-header {
+  background-color: #D03B3B;
+  color: white;
+}
 
-.build {
-  height: 768px;
+.name {
+  text-align: center;
+  z-index: 1;
+  font-size: 5em;
+  line-height: 98%;
+  color: white;
+  cursor:default;
+}
+
+.opacity {
+  position: absolute;
+  width: 100%;
+  height: 735px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: cover;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.order {
+  font-size: .5em;
+}
+
+.order-options {
   display: none;
+}
+
+.pizza-meats {
+  display: none;
+}
+
+.pizza-options {
+  display: none;
+}
+
+.pizza-review {
+  text-align: center;
+  font-size: .9em;
+  color: white;
+}
+
+.pizza-sauce {
+  display: none;
+}
+
+.pizza-size {
+  display: none;
+}
+
+.pizza-veggies {
+  display: none;
+}
+
+.place {
+  font-size: .8em;
+}
+
+.price {
+  font-size: 0.8em;
+  color: white;
 }
 
 .progress-bar {
   font-size: .8em;
 }
 
-.status {
-  z-index: 7; !important;
-}
-
-.btn {
-  font-size: 2em;
-}
-
-.building {
-  text-align: center;
+.purchase-modal {
+  font-size: 0.5em;
   color: white;
-  font-size: 2em;
-  z-index: 1;
-  margin-top: 10px;
-  /*margin-bottom: 15px;*/
-  cursor:default;
 }
 
 .size {
@@ -223,48 +245,41 @@ h4 {
   cursor:default;
 }
 
-label {
-  color: white;
-}
-
-.final {
+.slogan {
   text-align: center;
-  font-size: 1em;
+  z-index: 1;
+  font-size: 1.5em;
+  line-height: 110%;
+  color: white;
+  cursor:default;
+}
+
+.space {
+  height: 200px;
   color: white;
 }
 
-.modal-dialog {
-  z-index: 2;
-}
-
-.modal-header {
-  background-color: #D03B3B;
-  color: white;
-}
-
-.modal-content {
-  background-color: #221E20;
-  color: white;
+.status {
+  z-index: 7; !important;
 }
 
 .submit {
   font-size: 0.8em;
 }
 
-.buy {
+.table {
+  margin-bottom: 0;
+  margin-top: 10px;
+  z-index: 1;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  background-color: #221E20;
+  cursor:default;
+}
+
+.thanks {
   display: none;
-  /*visibility: hidden;*/
-  /*margin-top: -50%;*/
-}
-
-.price {
-  font-size: 0.8em;
-  color: white;
-}
-
-.purchase-modal {
-  font-size: 0.5em;
-  color: white;
 }
 
 .toppings {
@@ -272,58 +287,8 @@ label {
   color: white;
 }
 
-.table {
-  margin-bottom: 0;
-}
-
-th {
-  text-align: center;
-}
-
-.order-options {
-  display: none;
-}
-
-.pizza-review {
-  text-align: center;
-  font-size: .9em;
-  color: white;
-}
-
-.thanks {
-  display: none;
-}
-
-.order {
-  font-size: .5em;
-}
-
-.place {
-  font-size: .8em;
-}
-
-.delivery {
-  display: block;
-}
-
-.pizza-size {
-  display: none;
-}
-
-.pizza-sauce {
-  display: none;
-}
-
-.pizza-meats {
-  display: none;
-}
-
-.pizza-veggies {
-  display: none;
-}
-
-.pizza-options {
-  display: none;
+.understand {
+  width: 900px;
 }
 
 
