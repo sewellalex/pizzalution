@@ -102,8 +102,6 @@ th {
 
 .buy {
   display: none;
-  /*visibility: hidden;*/
-  /*margin-top: -50%;*/
 }
 
 .description {
@@ -235,7 +233,7 @@ th {
   color: white;
 }
 
-.size {
+.choice {
   text-align: center;
   color: white;
   font-size: 3em;
@@ -346,7 +344,7 @@ th {
     font-size: 2em;
   }
 
-  .size {
+  .choice {
     font-size: 4em;
   }
 

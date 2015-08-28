@@ -1,7 +1,6 @@
 /**
  * Created by alexsewell on 8/17/15.
  */
- // scroll page down when build pizza button is clicked
 $(document).ready(function() {
   $("#begin").click(function() {
     $(".button").css("display", "none");
@@ -10,21 +9,6 @@ $(document).ready(function() {
     $(".name").css("display", "none");
     $(".slogan").css("display", "none");
     $(".info").css("display", "none");
-    $(".opacity").css("opacity", "0.8");
-  });
-
-  $(".price").click(function() {
-    $('html,body').animate({scrollTop: $(window).scrollTop() + 750
-    });
-    $(".pizza-options").css("display", "none");
-    $(".build").css("display", "none");
-    $(".build-two").css("display", "none");
-    $(".buy").css("display", "block");
-  });
-
-  $(".place").click(function() {
-    $(".buy").css("display", "none");
-    $(".thanks").css("display", "block");
     $(".opacity").css("opacity", "0.8");
   });
 
@@ -77,6 +61,12 @@ $(document).ready(function() {
   $(".arrow-back").click(function() {
     $(".pizza-options").css("display", "none");
     $(".pizza-veggies").css("display", "block");
+  });
+
+  $(".place").click(function() {
+    $(".buy").css("display", "none");
+    $(".thanks").css("display", "block");
+    $(".opacity").css("opacity", "0.8");
   });
 
 });
